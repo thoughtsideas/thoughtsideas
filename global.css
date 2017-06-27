@@ -234,6 +234,10 @@ svg {
 		sans-serif;
 }
 
+.c-field--hidden {
+	display: none;
+}
+
 .c-field__label {
 	font-weight: 900;
 	color: hsl(16, 90%, 59%);
