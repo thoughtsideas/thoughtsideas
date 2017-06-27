@@ -51,6 +51,10 @@ body {
 	background-image: linear-gradient(-45deg, hsl(210,23%,19%) 0%,hsl(213,8%,22%) 100%);
 }
 
+i {
+	font-weight: normal;
+}
+
 a {
 	color: hsl(16, 90%, 59%);
 }
@@ -177,6 +181,188 @@ svg {
 
 .c-btn--primary:active {
 	background-color: hsl(11, 71%, 41%);
+}
+
+/* Fields
+ *
+ * 1. Reset browsers chosen appearance.
+	 ========================================================================== */
+
+.c-fieldset {
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 0;
+	border: none;
+	font-family:
+		Lato,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+}
+
+.c-legend {
+	margin-bottom: 1rem;
+	font-weight: 900;
+	color: hsl(16, 90%, 59%);
+}
+
+.c-legend i {
+	font-weight: 100;
+	color: hsl(0, 0%, 100%);
+}
+
+.c-legend__note {
+	font-weight: 100;
+	color: hsl(0, 0%, 66%);
+	-webkit-font-smoothing: auto;
+}
+
+.c-field {
+	margin-bottom: 1rem;
+	font-family:
+		Lato,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+}
+
+.c-field__label {
+	font-weight: 900;
+	color: hsl(16, 90%, 59%);
+}
+
+.c-field__label i {
+	font-weight: 100;
+	color: hsl(0, 0%, 100%);
+}
+
+.c-field__note {
+	color: hsl(0, 0%, 66%);
+}
+
+.c-field__input {
+	font-size: 1rem;
+	line-height: 2;
+}
+
+/* Field: Input
+	 ========================================================================== */
+
+.c-input__input {
+	margin: 0 0 0.5rem;
+	width: 100%; /* [2] */
+	background-color: transparent;
+	border-color: hsl(0, 0%, 100%);
+	border-style: solid;
+	border-width: 0 0 1px;
+	color: hsl(0, 0%, 100%);
+}
+
+.c-input__input::placeholder {
+	color: hsl(0, 0%, 66%);
+}
+
+.c-input__input:hover {
+	border-color: hsl(11, 71%, 47%);
+}
+
+.c-input__input:focus {
+	border-color: hsl(11, 71%, 47%);
+	outline: none; /* [1] */
+}
+
+/* Field: Textarea
+	 ========================================================================== */
+
+.c-textarea__input {
+	margin: 0 0 8px;
+	width: 100%; /* [2] */
+	background-color: transparent;
+	border-color: hsl(0, 0%, 100%);
+	border-style: solid;
+	border-width: 0 0 1px;
+	color: hsl(0, 0%, 100%);
+}
+
+.c-textarea__input::placeholder {
+	color: hsl(0, 0%, 66%);
+}
+
+.c-textarea__input:hover {
+	border-color: hsl(11, 71%, 47%);
+
+}
+
+.c-textarea__input:focus {
+	border-color: hsl(11, 71%, 47%);
+	outline: none; /* [1] */
+}
+
+/* Field: Select
+ *
+ * 1. Reset browsers chosen appearance.
+ * 2. Make full width of parent element.
+ * 3. Remove browser default border radius.
+ * 4. Stop text overlaying background.
+	 ========================================================================== */
+
+.c-select__input {
+	-webkit-appearance: none; /* [1] */
+	appearance: none; /* [1] */
+	width: 100%; /* [2] */
+	padding: 0 25px 0 0;
+	background-color: transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNiIgd2lkdGg9IjEwIj48cG9seWdvbiBwb2ludHM9IjAsMCAxMCwwIDUsNiIgc3R5bGU9ImZpbGw6cmdiYSgwLDAsMCwuMjQpOyIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-position: right center;
+	border-color: hsl(0, 0%, 100%);
+	border-radius: 0; /* [3] */
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	color: hsl(0, 0%, 100%);
+}
+
+.c-select__input:hover {
+	border-color: hsl(11, 71%, 47%);
+}
+
+.c-select__input:focus {
+	border-color: hsl(11, 71%, 47%);
+	outline: none; /* [1] */
+}
+
+
+/* Field: Checkbox
+ * 1. Align checkbox bottom edge with type's baseline.
+	 ========================================================================== */
+
+.c-checkbox {
+	display: flex;
+}
+
+.c-checkbox--split {
+	float: left;
+	width: 50%;
+}
+
+.c-checkbox__label {
+	order: 2;
+	font-weight: 400;
+	color: hsl(0, 0%, 100%);
+	line-height: 1; /* [1] */
+}
+
+.c-checkbox__input {
+	order: 1;
+	margin-right: 0.5rem;
 }
 
 /* Layout
